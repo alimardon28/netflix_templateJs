@@ -244,6 +244,10 @@ img {
     margin-bottom: 20px;
 }
 
+.netflix_items {
+    border-bottom: 10px solid #1b1b1b;
+}
+
 .neftlix_item-box {
     margin: 0;
     padding: 0;
@@ -368,4 +372,90 @@ img {
         font-size: 15px;
     }
 
+}
+
+.netflix_section-acardion {
+    margin: 0;
+    padding-top: 20px;
+}
+
+.netflix_section-acardion .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.acardion-title {
+    font-size: 50px;
+    font-family: sans-serif;
+    margin: 0;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.acardion {
+    margin-bottom: 12px;
+    padding: 20px 19px;
+    background-color: #303030;
+    color: #fff;
+    max-height: 80px;
+    overflow-y: hidden;
+    cursor: pointer;
+    width: 70%;
+    font-size: 25px;
+    line-height: 40px;
+    font-family: sans-serif;
+}
+
+.acardion::after {
+    content: '\002b';
+    float: right;
+    font-size: 38px;
+}
+
+.active::after {
+    content: '\00D7';
+}
+
+.acardion-open {
+    width: 70%;
+    overflow-y: hidden;
+    max-height: 0px;
+    margin: 0 auto;
+    background-color: #303030;
+    transition: 0.4s ease;
+}
+
+.acardion-open p {
+    padding: 15px;
+    color: #fff;
+    font-size: 23px;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:710px) {
+    .acardion-title {
+        font-size: 40px;
+    }
+
+    .acardion {
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .acardion-open {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .acardion-title {
+        font-size: 35px;
+    }
+
+    .acardion-open p {
+        font-size: 18px;
+    }
 }
