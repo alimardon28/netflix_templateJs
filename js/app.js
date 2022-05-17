@@ -29,6 +29,8 @@ elForm.addEventListener("submit", function (evt) {
         window.localStorage.setItem("token", data.token);
 
         window.location.replace("index.html");
+      } else {
+        alert("default holatdagini kirgizing");
       }
     });
 });
