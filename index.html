@@ -4,29 +4,121 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/nficon2016.png" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <title>Netflix</title>
   </head>
   <body>
     <header class="headers">
-      <div class="container">
-        <nav class="navbars">
-          <a href="/#" class="navbars_link">
-            <img src="./images/logo.png" alt="netflix icons mages" />
-          </a>
-          <ul>
-            <li>
-              <select id="select" class="select">
-                <option value="ru" class="option">ruccia</option>
-                <option value="eng" class="option">english</option>
-                <option value="uz" class="option">uzbek</option>
-              </select>
-            </li>
-            <li><button class="logout">Logout</button></li>
-          </ul>
-        </nav>
+      <div class="headersTmdb">
+        <!-- <div
+          class="tmdbBanner"
+          style="
+            background-image: url(./images/banner.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            color: #fff;
+          "
+        > -->
+          <div class="container">
+            <nav class="navbar">
+              <a href="/#" class="navbar_link">
+                <img src="./images/logo.png" alt="netflix icons mages" />
+              </a>
+              <ul class="navbar_list">
+                <li class="navbar_item">
+                  <select id="select" class="select">
+                    <option value="ru" class="option">ruccia</option>
+                    <option value="eng" class="option">english</option>
+                    <option value="uz" class="option">uzbek</option>
+                  </select>
+                </li>
+                <li class="navbar_item" id="navbarMOdalItem">
+                  <div class="logoutBox">
+                    <button class="logout" type="submit">Logout</button>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- <h2 class="tmdb-title">The Marked Heart</h2>
+            <p class="tmdb-desc">
+              This new Colombian telenovela is about a man who has to watch his
+              wife die and have her heart extracted to give to another woman.
+              He’s out for revenge in the world of organ trafficking."
+            </p>
+            <div class="tmdb-btns">
+              <button class="tmdb-btn">Play</button>
+              <button class="tmdb-btn">Prev</button>
+            </div> -->
+          </div>
+        </div>
       </div>
     </header>
+
+    <main class="mains">
+      <section class="trindingSection">
+        <div class="container">
+          <h2 class="tmdbtitle">Trend movie</h2>
+          <div class="trindingMovie">
+          </div>
+        </div>
+      </section>
+      <section class="toprotedSection">
+        <div class="container">
+          <h2 class="tmdbtitle">TopRated</h2>
+          <div class="tmdbmovies">
+            <!-- <div class="moviesCard">
+              <img class="movieImgs" src='${`https://image.tmdb.org/t/p/original/${item.backdrop_path}`}' alt="${
+                item.title
+              }">
+              <h3 class="movieName">${item.title}</h3>
+              </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <ul class="footer_list">
+          <li class="footer_item">
+            <a class="footer_links" href="#">Questions? Contact us.</a>
+            <a class="footer_link" href="#"> FAQ </a>
+            <a class="footer_link" href="#"> Investor Relations </a>
+            <a class="footer_link" href="#"> Privacy </a>
+            <a class="footer_link" href="#"> Speed Test </a>
+            <select id="select" class="select footer">
+              <option value="ru" class="option">ruccia</option>
+              <option value="eng" class="option">english</option>
+              <option value="uz" class="option">uzbek</option>
+            </select>
+            <p class="footer-desc">Netflix Uzbekistan</p>
+          </li>
+          <li class="footer_item">
+            <a class="footer_link" href="#"> Help Center </a>
+            <a class="footer_link" href="#"> Jobs </a>
+            <a class="footer_link" href="#"> Cookie Preferences </a>
+            <a class="footer_link" href="#"> Legal Notices </a>
+          </li>
+          <li class="footer_item">
+            <a class="footer_link" href="#"> Account </a>
+            <a class="footer_link" href="#"> Ways to Watch </a>
+            <a class="footer_link" href="#"> Corporate Information </a>
+            <a class="footer_link" href="#"> Only on Netflix </a>
+          </li>
+          <li class="footer_item">
+            <a class="footer_link" href="#"> Media Center </a>
+            <a class="footer_link" href="#"> Terms of Use </a>
+            <a class="footer_link" href="#"> Contact Us </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
   <script src="./js/login.js"></script>
 </html>

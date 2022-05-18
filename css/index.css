@@ -1,0 +1,176 @@
+.headers {
+    margin: 0;
+    padding: 0;
+
+}
+
+.tmdbBanner {
+    padding: 14px 0px;
+}
+
+.tmdb-title {
+    margin: 0;
+    padding-top: 10%;
+    font-size: 70px;
+    font-family: sans-serif;
+}
+
+.tmdb-desc {
+    margin: 0;
+    padding-top: 2%;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.tmdb-btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 2%;
+}
+
+.tmdb-btn {
+    margin: 0;
+    padding: 15px 25px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: red;
+    color: #fff;
+    font-size: 24px;
+    width: 200px;
+    height: 70px;
+}
+
+.tmdb-btn:nth-child(2) {
+    background-color: #000;
+    margin-left: 20px;
+}
+
+.trindingSection,
+.toprotedSection {
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.title,
+.tmdbtitle {
+    font-size: 34px;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.movieName {
+    font-size: 12px;
+    margin: 0;
+    padding-top: 7px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* TRINDING MOVIES STYLE */
+
+.trindingMovie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.movieCard {
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.movieImg {
+    max-width: 300px;
+    max-height: 280px;
+    min-width: 300px;
+    min-height: 280px;
+    border-radius: 10px;
+}
+
+/* TRINDING MOVIES STYLE */
+
+/* TopRated MOVIES STYLE */
+
+
+.tmdbmovies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+.moviesCard {
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.movieImgs {
+    max-width: 300px;
+    max-height: 240px;
+    min-width: 300px;
+    min-height: 240px;
+    border-radius: 10px;
+}
+
+/* TopRated MOVIES STYLE */
+
+/* SCROOL STYLE SECTIONS */
+
+/* TRINDING SCROOL STYLE */
+/* width */
+.trindingMovie::-webkit-scrollbar {
+    width: 0px;
+    height: 4px;
+}
+
+/* Track */
+.trindingMovie::-webkit-scrollbar-track {
+    background: rgb(37, 37, 37);
+}
+
+/* Handle */
+.trindingMovie::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.trindingMovie::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* TOPRATED SCROL STYLE */
+.tmdbmovies::-webkit-scrollbar {
+    width: 0px;
+    height: 4px;
+}
+
+.tmdbmovies::-webkit-scrollbar-track {
+    background: rgb(37, 37, 37);
+}
+
+.tmdbmovies::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.tmdbmovies::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

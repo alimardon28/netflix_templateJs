@@ -1,3 +1,5 @@
+"use strict";
+
 let acardion = document.querySelectorAll(".acardion");
 let acardionOpen = document.querySelector(".acardion-open");
 

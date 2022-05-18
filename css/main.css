@@ -75,7 +75,8 @@ img {
     text-transform: capitalize;
 }
 
-.btn {
+.btn,
+.logout {
     margin: 0;
     padding: 10px 20px;
     border: none;
@@ -87,6 +88,8 @@ img {
     font-size: 18px;
     cursor: pointer;
 }
+
+
 
 .header_elements {
     margin: 0;
