@@ -19,7 +19,6 @@ elLogoutBtn.addEventListener("click", function () {
 // TMDB API RESPONSE FUCTIONAL
 let headers = document.querySelector(".headers");
 
-
 const baseURL = "https://api.themoviedb.org/3";
 const API_KEY = "cff296e9a491db50c4b2db6668d0dc80";
 let fetchNetflixOriginals = `/discover/tv?api_key=${API_KEY}&with_networks=213`;
@@ -43,7 +42,6 @@ function setData() {
 setData();
 
 function movieTmdbTrend(data) {
-
   data.map((item) => {
     console.log(item);
 
@@ -59,14 +57,13 @@ function movieTmdbTrend(data) {
     </div>
   `;
 
-  trindingMovie.append(card);
+    trindingMovie.append(card);
   });
 }
-// Trending MOVIE functinol
 
 // TopRated MOVIE funtional
 
-let tmdbmovies = document.querySelector('.tmdbmovies')
+let tmdbmovies = document.querySelector(".tmdbmovies");
 
 function setDatas() {
   fetch(`${baseURL}${fetchTopRated}`)
@@ -76,7 +73,6 @@ function setDatas() {
 setDatas();
 
 function tmdvTopRated(data) {
-
   data.map((movie) => {
     console.log(movie);
 
@@ -92,12 +88,159 @@ function tmdvTopRated(data) {
     </div>
   `;
 
-  tmdbmovies.append(cards);
+    tmdbmovies.append(cards);
   });
 }
-// TopRated MOVIE funtional
 
+// Action MOVIE funtional
+let tmdbmoviesAction = document.querySelector(".tmdbmoviesAction");
 
+function setDatasAction() {
+  fetch(`${baseURL}${fetchActionMovies}`)
+    .then((data) => data.json())
+    .then((item) => tmdvAction(item.results));
+}
+setDatasAction();
+
+function tmdvAction(data) {
+  data.map((movie) => {
+    console.log(movie);
+
+    const cardsAction = document.createElement("div");
+
+    cardsAction.innerHTML = `
+
+    <div class="moviesCard">
+    <img class="movieImgs" src=${`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt="${
+      movie.title
+    }">
+    <h3 class="movieName">${movie.title}</h3>
+    </div>
+  `;
+
+    tmdbmoviesAction.append(cardsAction);
+  });
+}
+
+// Comedy movies function
+
+let tmdbComedyMovies = document.querySelector(".tmdbComedyMovies");
+
+function setDatasComedy() {
+  fetch(`${baseURL}${fetchComedyMovies}`)
+    .then((data) => data.json())
+    .then((item) => tmdComed(item.results));
+}
+setDatasComedy();
+
+function tmdComed(data) {
+  data.map((movie) => {
+    console.log(movie);
+
+    const cardComedy = document.createElement("div");
+
+    cardComedy.innerHTML = `
+
+    <div class="ComedyMoviesCard">
+    <img class="ComedyMoviesImg" src=${`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt="${
+      movie.title
+    }">
+    <h3 class="movieName">${movie.title}</h3>
+    </div>
+  `;
+
+    tmdbComedyMovies.append(cardComedy);
+  });
+}
+
+// HORROR MOVIES FUNCTIONAL
+let chHorrorMovies = document.querySelector(".fetchHorrorMovies");
+
+function setDatasHorror() {
+  fetch(`${baseURL}${fetchHorrorMovies}`)
+    .then((data) => data.json())
+    .then((item) => tmdHorror(item.results));
+}
+setDatasHorror();
+
+function tmdHorror(data) {
+  data.map((movie) => {
+    console.log(movie);
+
+    const cardHorror = document.createElement("div");
+
+    cardHorror.innerHTML = `
+
+    <div class="fetchHorrorMoviesCard">
+    <img class="fetchHorrorMoviesImg" src=${`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt="${
+      movie.title
+    }">
+    <h3 class="movieName">${movie.title}</h3>
+    </div>
+  `;
+
+    chHorrorMovies.append(cardHorror);
+  });
+}
+// ROMANCE MOVIES FUNCTIONAL
+let RomanceMovies = document.querySelector(".fetchRomanceMovies");
+
+function setDatasRomance() {
+  fetch(`${baseURL}${fetchRomanceMovies}`)
+    .then((data) => data.json())
+    .then((item) => tmdRomance(item.results));
+}
+setDatasRomance();
+
+function tmdRomance(data) {
+  data.map((movie) => {
+    console.log(movie);
+
+    const cardRomance = document.createElement("div");
+
+    cardRomance.innerHTML = `
+
+    <div class="fetchRomanceMoviesCard">
+    <img class="fetchRomanceMoviesImg" src=${`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt="${
+      movie.title
+    }">
+    <h3 class="movieName">${movie.title}</h3>
+    </div>
+  `;
+
+    RomanceMovies.append(cardRomance);
+  });
+}
+
+// Documentaries MOVIES FUNCTIONAL
+let documenrariesMovies = document.querySelector(".DocumentariesMovies");
+
+function setDatasDocumentary() {
+  fetch(`${baseURL}${fetchDocumentaries}`)
+    .then((data) => data.json())
+    .then((item) => tmdDocumentary(item.results));
+}
+setDatasDocumentary();
+
+function tmdDocumentary(data) {
+  data.map((movie) => {
+    console.log(movie);
+
+    const cardDocumentary = document.createElement("div");
+
+    cardDocumentary.innerHTML = `
+
+    <div class="DocumentariesMoviesCard">
+    <img class="DocumentariesMoviesImg" src=${`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`} alt="${
+      movie.title
+    }">
+    <h3 class="movieName">${movie.title}</h3>
+    </div>
+  `;
+
+    documenrariesMovies.append(cardDocumentary);
+  });
+}
 
 // const sorov = {
 //     fetchTrending: `/trending/all/week?api_key=${API_KEY}&languages=en-US`,

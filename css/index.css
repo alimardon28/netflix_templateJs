@@ -1,6 +1,6 @@
 .headers {
     margin: 0;
-    padding: 0;
+    padding: 14px 0px;
 
 }
 
@@ -51,7 +51,12 @@
 }
 
 .trindingSection,
-.toprotedSection {
+.toprotedSection,
+.actionMoviesSection,
+.ComedyMoviesSection,
+.fetchHorrorMoviesSection,
+.fetchRomanceMoviesSection,
+.DocumentariesMoviesSection {
     margin: 0;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -74,52 +79,11 @@
     text-align: center;
 }
 
-/* TRINDING MOVIES STYLE */
-
-.trindingMovie {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow-x: scroll;
-}
-
-.movieCard {
-    width: 300px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: 25px;
-    border-radius: 10px;
-}
-
 .movieImg {
     max-width: 300px;
     max-height: 280px;
     min-width: 300px;
     min-height: 280px;
-    border-radius: 10px;
-}
-
-/* TRINDING MOVIES STYLE */
-
-/* TopRated MOVIES STYLE */
-
-
-.tmdbmovies {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    overflow-x: scroll;
-}
-
-.moviesCard {
-    width: 300px;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: 25px;
     border-radius: 10px;
 }
 
@@ -131,10 +95,57 @@
     border-radius: 10px;
 }
 
-/* TopRated MOVIES STYLE */
+.movieImgsAction {
+    max-width: 300px;
+    max-height: 220px;
+    min-width: 300px;
+    min-height: 220px;
+    border-radius: 10px;
+}
+
+/* ACTION MOVIES STYLE */
+.fetchHorrorMovies,
+.fetchRomanceMovies,
+.DocumentariesMovies,
+.tmdbComedyMovies,
+.tmdbmoviesAction,
+.tmdbmovies,
+.trindingMovie {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: scroll;
+}
+
+
+.fetchHorrorMoviesCard,
+.fetchRomanceMoviesCard,
+.DocumentariesMoviesCard,
+.ComedyMoviesCard,
+.moviesCardAction,
+.moviesCard,
+.movieCard {
+    width: 300px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 25px;
+    border-radius: 10px;
+}
+
+.fetchHorrorMoviesImg,
+.fetchRomanceMoviesImg,
+.DocumentariesMoviesImg,
+.ComedyMoviesImg {
+    max-width: 300px;
+    max-height: 180px;
+    min-width: 300px;
+    min-height: 200px;
+    border-radius: 10px;
+}
 
 /* SCROOL STYLE SECTIONS */
-
 /* TRINDING SCROOL STYLE */
 /* width */
 .trindingMovie::-webkit-scrollbar {
@@ -152,12 +163,7 @@
     background: #888;
 }
 
-/* Handle on hover */
-.trindingMovie::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-/* TOPRATED SCROL STYLE */
+/* TOPRATED SCROoL STYLE */
 .tmdbmovies::-webkit-scrollbar {
     width: 0px;
     height: 4px;
@@ -171,6 +177,74 @@
     background: #888;
 }
 
-.tmdbmovies::-webkit-scrollbar-thumb:hover {
-    background: #555;
+/* ACTION MOVIES scrool style */
+
+.tmdbmoviesAction::-webkit-scrollbar {
+    width: 0px;
+    height: 4px;
+}
+
+.tmdbmoviesAction::-webkit-scrollbar-track {
+    background: rgb(37, 37, 37);
+}
+
+.tmdbmoviesAction::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* COMEDY SCROOL STYLE */
+.tmdbComedyMovies::-webkit-scrollbar {
+    width: 0px;
+    height: 4px;
+}
+
+.tmdbComedyMovies::-webkit-scrollbar-track {
+    background: rgb(37, 37, 37);
+}
+
+.tmdbComedyMovies::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* HORROR SCROOL STYLE */
+.fetchHorrorMovies::-webkit-scrollbar {
+    width: 0px;
+    height: 4px;
+}
+
+.fetchHorrorMovies::-webkit-scrollbar-track {
+    background: rgb(37, 37, 37);
+}
+
+.fetchHorrorMovies::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* ROMANCE SCROOL STYLE */
+.fetchRomanceMovies::-webkit-scrollbar {
+    width: 0px;
+    height: 4px;
+}
+
+.fetchRomanceMovies::-webkit-scrollbar-track {
+    background: rgb(37, 37, 37);
+}
+
+.fetchRomanceMovies::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* DOCUMENTARYMOVIES SCROOL */
+
+.DocumentariesMovies::-webkit-scrollbar {
+    width: 0px;
+    height: 4px;
+}
+
+.DocumentariesMovies::-webkit-scrollbar-track {
+    background: rgb(37, 37, 37);
+}
+
+.DocumentariesMovies::-webkit-scrollbar-thumb {
+    background: #888;
 }
